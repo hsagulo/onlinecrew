@@ -3,7 +3,7 @@
 include_once( get_template_directory() . '/lib/init.php' );
 
 //* Child theme (do not remove)
-define( 'CHILD_THEME_NAME', 'OnlineCrew v2' );
+define( 'CHILD_THEME_NAME', 'OnlineCrew v1' );
 define( 'CHILD_THEME_URL', 'http://www.studiopress.com/' );
 define( 'CHILD_THEME_VERSION', '2.2.0' );
 
@@ -33,10 +33,10 @@ function onlinecrew_v2_scripts() {
 	wp_enqueue_style( 'onlinecrew-v2-styles' );
 
 	//* Add compiled JS
-	wp_enqueue_script( 'onlinecrew-v2-scripts', get_stylesheet_directory_uri() . '/js/project' . $minnified . '.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+	wp_enqueue_script( 'onlinecrew-v2-scripts', get_stylesheet_directory_uri() . '/public/js/project' . $minnified . '.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 
   //* Add slick.js carousel
-  wp_enqueue_script( 'onlinecrew-slickjs-scripts', get_stylesheet_directory_uri() . '/js/slick.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+  wp_enqueue_script( 'onlinecrew-slickjs-scripts', get_stylesheet_directory_uri() . '/public/js/slick.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 }
 
 //* Add HTML5 markup structure

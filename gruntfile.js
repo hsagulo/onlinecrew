@@ -12,7 +12,7 @@ module.exports = function(grunt) {
                 livereload: true,
             },
             compass: {
-                files: ['public/scss/**/*.{scss,sass}'],
+                files: ['src/scss/**/*.{scss,sass}'],
                 tasks: ['compass']
             },
             js: {
@@ -28,7 +28,7 @@ module.exports = function(grunt) {
         compass: {
             dist: {
                 options: {
-                    config: 'config.rb',
+                    config: 'src/scss/config.rb',
                     force: true
                 }
             }
@@ -85,16 +85,16 @@ module.exports = function(grunt) {
         deploy: {
             staging: {
                 src: "./",
-                dest: "~/path/to/theme",
-                host: "user@host.com",
+                dest: "~/Desktop/onlinecrew_v2/wp-content/theme",
+                host: "root@localhost:8888",
                 recursive: true,
                 syncDest: true,
                 exclude: ['.git*', 'node_modules', '.sass-cache', 'Gruntfile.js', 'package.json', '.DS_Store', 'README.md', 'config.rb', '.jshintrc']
             },
             production: {
                 src: "./",
-                dest: "~/path/to/theme",
-                host: "user@host.com",
+                dest: "~/Desktop/onlinecrew_v2/wp-content/theme",
+                host: "root@localhost:8888",
                 recursive: true,
                 syncDest: true,
                 exclude: '<%= rsync.staging.exclude %>'

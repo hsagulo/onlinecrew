@@ -18,16 +18,16 @@ $font-mono:  "Courier 10 Pitch", Courier, monospace;
 
 @font-face {
   font-family: 'Nexa Bold';
-  src: url('fonts/NexaBold.eot');
-  src: url('fonts/NexaBold.woff') format('woff'), url('fonts/NexaBold.ttf') format('truetype'), url('fonts/NexaBold.svg') format('svg');
+  src: url('/public/fonts/NexaBold.eot');
+  src: url('/public/fonts/NexaBold.woff') format('woff'), url('/public/fonts/NexaBold.ttf') format('truetype'), url('/public/fonts/NexaBold.svg') format('svg');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Nexa Light';
-  src: url('fonts/NexaLight.eot');
-  src: url('fonts/NexaLight.woff') format('woff'), url('fonts/NexaLight.ttf') format('truetype'), url('fonts/NexaLight.svg') format('svg');
+  src: url('/public/fonts/NexaLight.eot');
+  src: url('/public/fonts/NexaLight.woff') format('woff'), url('/public/fonts/NexaLight.ttf') format('truetype'), url('/public/fonts/NexaLight.svg') format('svg');
   font-weight: light;
   font-style: normal;
 }
